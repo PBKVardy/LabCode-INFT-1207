@@ -1,6 +1,6 @@
 # test_calculator.py
 import unittest
-from Lab0.calculator import add, subtract
+from Lab0.src.calculator import add, subtract
 
 
 class TestCalculator(unittest.TestCase):
