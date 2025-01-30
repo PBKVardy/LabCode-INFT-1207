@@ -2,7 +2,11 @@ import statistics
 
 
 def validate_temperature(value):
-    # You have to complete this function
+    try:
+        float(value)
+    except ValueError:
+        return None
+
     if -50 <= value <= 150:
         return value
     return None
