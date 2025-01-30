@@ -16,9 +16,6 @@ def validate_temperature(value):
 
 
 def process_temperatures(temp_list):
-    if not temp_list:
-        return "No Input Provided."
-
     """Process the list of temperatures and return min, max, and avg."""
     # valid_temps = [float(temp) for temp in temp_list]
     valid_temps = [validate_temperature(temp) for temp in temp_list if validate_temperature(temp) is not None]
